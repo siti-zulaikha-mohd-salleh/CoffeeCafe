@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div class="container py-5">
+
+    <h1 class="mb-5 text-center fw-bold">
+        Coffee Menu
+    </h1>
+
+
+
+    <div class="row g-4">
+
+     <!-- PRODUCT 1 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/caramellatte.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Caramel Latte</h4>
+                        <p>
+                            Creamy espresso blended with sweet caramel sauce and fresh milk.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 14
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Caramel Latte', 14)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- PRODUCT 2 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/spanishlatte.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Spanish Latte</h4>
+                        <p>
+                            Chilled creamy latte made with sweet condensed milk blend.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 14
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Spanish Latte', 14)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+ <!-- PRODUCT 3 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/mochaice.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Mocha Ice</h4>
+                        <p>
+                            Smooth espresso with creamy caramel milk.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 14
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Mocha Ice', 14)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+             <!-- PRODUCT 4 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/hazelnutcap.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Hazelnut Cappucino</h4>
+                        <p>
+                            Rich espresso topped with smooth foam and hazelnut aroma.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 12
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Hazelnut Cappucino', 12)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- PRODUCT 5 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/vanillaamer.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Vanilla Americano</h4>
+                        <p>
+                            Light americano infused with fragrant vanilla and smooth flavor.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 10
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Vanilla Americano', 10)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PRODUCT 6 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/darkchococof.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Dark Chocolate Coffee</h4>
+                        <p>
+                            Bold coffee combined with rich dark chocolate for deeper flavor.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 14
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Dark Chocolate Coffee', 14)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PRODUCT 7 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/matchaespresfus.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Matcha Espresso Fusion</h4>
+                        <p>
+                            Unique combination of premium matcha and strong espresso shots.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 16
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Matcha Espresso Fusion', 16)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PRODUCT 8 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/saltedcarmacchi.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Salted Caramel Macchiato</h4>
+                        <p>
+                            Layerred latte with sweet salted caramel and creamy milk texture.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 15
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Salted Caramel Macchiato', 15)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- PRODUCT 9 -->
+            <div class="col-lg-4">
+               <div class="card coffee-card border-0 shadow-lg">
+                  <img src="./assets/brwnsugcofflatt.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Brown Sugar Coffee Latte</h4>
+                        <p>
+                           Creamy latte blended with fragrant caramelized brown sugar flavor.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="price">
+                                RM 12
+                            </span>
+                             <button class="btn btn-dark" onclick="addToCart('Brown Sugar Coffee Latte', 12)">Add Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
